@@ -59,8 +59,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Mirror Group", "https://t.me/HQLeechZONE")
-    buttons.buildbutton("Leech Group", "https://t.me/HQLeechZONE")
+    buttons.buildbutton("Mirror Group", "https://t.me/kd_botz/358")
+    buttons.buildbutton("Leech Group", "https://t.me/Kd_botz/358")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -69,7 +69,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup(' Join the mirror group to use this bot. -> <b>[ @HQLeechZONE ]</b>', context.bot, update, reply_markup)
+        sendMarkup(' Join the mirror group to use this bot. -> <b>[ @Kd_botz ]</b>', context.bot, update, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting...", context.bot, update)
